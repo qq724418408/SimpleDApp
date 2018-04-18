@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorGreen">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@mipmap/icon_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="修改用户"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/ivHeadPortrait"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_mine_head_portrait" />
+
+            <com.forms.view.ClearEditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/icon_regsiter_telephone"
+                android:drawablePadding="10dp"
+                android:hint="请输入用户名"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorTextGray" />
+
+            <com.forms.view.ClearEditText
+                android:id="@+id/etPwd1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/icon_regsiter_verification_code"
+                android:drawablePadding="10dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorTextGray" />
+
+            <com.forms.view.ClearEditText
+                android:id="@+id/etPwd2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/icon_regsiter_verification_code"
+                android:drawablePadding="10dp"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/colorTextGray" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/colorGreen"
+                android:text="保存"
+                android:textColor="@drawable/selector_login_btn"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
